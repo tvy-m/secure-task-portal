@@ -22,6 +22,11 @@
             <div class="task-card">
                 <h3>{{ task.title }}</h3>
                 <p>{{ task.description }}</p>
+            <form action="/delete/{{ task.id }}/" method="POST">
+                {% csrf_token %}
+                <button class="delete-btn">Delete</button>
+            </form>
+
             </div>
             {% empty %}
             <p>No tasks yet.</p>

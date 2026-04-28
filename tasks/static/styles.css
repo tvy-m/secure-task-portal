@@ -1,0 +1,174 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #F7F7F5;
+    color: #2E2E2E;
+}
+
+/* Layout */
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #FFFFFF;
+    padding: 30px 20px;
+    border-right: 1px solid #eee;
+}
+
+.logo {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #7A7A7A;
+    transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: #2E2E2E;
+    font-weight: 500;
+}
+
+/* Main */
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.subtext {
+    color: #7A7A7A;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.add-btn {
+    background: #A3B18A;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+.add-btn:hover {
+    opacity: 0.9;
+}
+
+/* Task Grid */
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Task Card */
+.task-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+}
+
+.task-card h3 {
+    margin-bottom: 8px;
+}
+
+.task-card p {
+    font-size: 14px;
+    color: #7A7A7A;
+    margin-bottom: 15px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    border: none;
+    background: #eee;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task-actions .delete {
+    background: #f8d7da;
+}
+
+/* Auth Page */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Auth Card */
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    outline: none;
+}
+
+.auth-card input:focus {
+    border-color: #A3B18A;
+}
+
+/* Primary Button */
+.primary-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: #A3B18A;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Switch text */
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #A3B18A;
+    text-decoration: none;
+}

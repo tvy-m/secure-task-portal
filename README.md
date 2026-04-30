@@ -14,6 +14,12 @@ A secure full-stack task management web application built with Django, featuring
 - Database: SQLite
 - Version Control: Git & GitHub
 
+## Demo 
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/7dfc3dbb-21eb-4dca-b67b-f7a77bb1ffe9" />
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/6be1042e-599a-4429-add6-87ede559a1eb" />
+
+
+
 ## How to Run Locally
 1. Clone the repository:
 ```bash
